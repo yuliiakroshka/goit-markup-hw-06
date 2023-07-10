@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -16,6 +17,13 @@ for Your Business"
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Roboto&family=Roboto+Condensed&family=Roboto+Flex:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+    <!--Скрипт мобільного меню-->
 
     <!--Normalize-->
     <link rel="normalize" href="./css/modern-normalize.min.css" />
@@ -84,7 +92,7 @@ for Your Business"
           <h2 class="visually-hidden" hidden>our benefits</h2>
           <ul class="benefits-list">
             <li class="benefits-item">
-              <div class="benefits-icon-box">
+              <div class="benefits-icon-box visually-hidden">
                 <svg class="benefits-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
@@ -95,8 +103,9 @@ for Your Business"
                 the perfect and creative solution.
               </p>
             </li>
+
             <li class="benefits-item">
-              <div class="benefits-icon-box">
+              <div class="benefits-icon-box visually-hidden">
                 <svg class="benefits-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
@@ -107,8 +116,9 @@ for Your Business"
                 within the shortest possible time.
               </p>
             </li>
+
             <li class="benefits-item">
-              <div class="benefits-icon-box">
+              <div class="benefits-icon-box visually-hidden">
                 <svg class="benefits-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
@@ -120,7 +130,7 @@ for Your Business"
               </p>
             </li>
             <li class="benefits-item">
-              <div class="benefits-icon-box">
+              <div class="benefits-icon-box visually-hidden">
                 <svg class="benefits-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
@@ -136,12 +146,13 @@ for Your Business"
       </section>
 
       <!--Section 3-->
-      <section class="section-we-are">
+      <section class="section-we-are visually-hidden">
         <div class="container">
           <h2 class="title-section">What are we doing</h2>
           <ul class="list">
             <li class="we-are-item">
               <img
+                srcset="./images/img-1.jpg, ./images/img-1.jpg@2x"
                 src="./images/img-1.jpg"
                 alt="Computer"
                 width="360"
@@ -150,6 +161,7 @@ for Your Business"
             </li>
             <li class="we-are-item">
               <img
+                srcset="./images/img-2.jpg, ./images/img-2.jpg@2x"
                 src="./images/img-2.jpg"
                 alt="Telephon"
                 width="360"
@@ -158,6 +170,7 @@ for Your Business"
             </li>
             <li class="we-are-item">
               <img
+                srcset="./images/img-3.jpg, ./images/img-3.jpg@2x"
                 src="./images/img-3.jpg"
                 alt="Telephon&computer"
                 width="360"
@@ -175,6 +188,7 @@ for Your Business"
           <ul class="list">
             <li class="list-item">
               <img
+                srcset="./images/pfoto-1.jpg, ./images/images/pfoto-1@2x.jpg"
                 src="./images/pfoto-1.jpg"
                 alt="Mark Guerrero Product Designer"
                 width="264"
@@ -233,6 +247,7 @@ for Your Business"
             </li>
             <li class="list-item">
               <img
+                srcset="./images/pfoto-2.jpg, ./images/images/pfoto-2@2x.jpg"
                 src="./images/pfoto-2.jpg"
                 alt="Tom Ford
 Frontend Developer"
@@ -292,6 +307,7 @@ Frontend Developer"
             </li>
             <li class="list-item">
               <img
+                srcset="./images/pfoto-3.jpg, ./images/images/pfoto-3@2x.jpg"
                 src="./images/pfoto-3.jpg"
                 alt="Camila Garcia
 Marketing"
@@ -351,6 +367,7 @@ Marketing"
             </li>
             <li class="list-item">
               <img
+                srcset="./images/pfoto-4.jpg, ./images/images/pfoto-4@2x.jpg"
                 src="./images/pfoto-4.jpg"
                 alt="Daniel Wilson
 UI Designer"
@@ -546,13 +563,13 @@ UI Designer"
         </div>
       </div>
     </footer>
+
     <!--Modal window-->
-    /
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-btn" data-modal-close>
           <svg class="modal-icon" width="8" height="8">
-            <use href="./images/icons.svg#icon-close"></use>
+            <use href="./images/icons.svg#icon-close "></use>
           </svg>
         </button>
         <p class="modal-text">Leave your contacts and we will call you back</p>
@@ -632,7 +649,83 @@ UI Designer"
         </form>
       </div>
     </div>
+
+    <!--  
+    <section class="top-nav">
+      <div>
+        <a class="link-logo" href="./index.html">
+          Web
+          <span class="span-studio">Studio</span>
+        </a>
+      </div>
+      <input id="menu-toggle" />
+      <label class="menu-button-container" for="menu-toggle">
+        <div class="menu-button"></div>
+      </label>
+      <nav class="nav">
+        <ul class="list nav-list">
+          <li class="header-nav-item">
+            <a class="link nav-link active" href="./index.html">Studio</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="link nav-link active" href="./portfolio.html"
+              >Portfolio</a
+            >
+          </li>
+          <li class="header-nav-item">
+            <a class="link nav-link active" href="">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <address class="address">
+        <ul class="list">
+          <li>
+            <a class="address-link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="address-link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
+      </address>
+    </section>
+    -->
+
+    <!--<header class="page-header">
+      <div class="container">
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+
+        <ul class="menu">
+          <li><a href="" class="link">About</a></li>
+          <li><a href="" class="link">Products</a></li>
+          <li><a href="" class="link">Contacts</a></li>
+          <li><a href="" class="link">Career</a></li>
+        </ul>
+      </div>
+    </header>
+  -->
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
-<node-v></node-v>
