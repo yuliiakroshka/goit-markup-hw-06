@@ -39,6 +39,25 @@ for Your Business"
             Web
             <span class="span-studio">Studio</span>
           </a>
+          <button
+            class="menu-toggle-btn js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="32"
+              height="22"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="./images/icons.svg#icon-hamburger"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
           <ul class="list nav-list">
             <li class="header-nav-item">
               <a class="link nav-link active" href="./index.html">Studio</a>
@@ -54,7 +73,7 @@ for Your Business"
           </ul>
         </nav>
         <address class="address">
-          <ul class="list">
+          <ul class="list address-list">
             <li>
               <a class="address-link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
@@ -146,7 +165,7 @@ for Your Business"
       </section>
 
       <!--Section 3-->
-      <section class="section-we-are visually-hidden">
+      <section class="section-we-are">
         <div class="container">
           <h2 class="title-section">What are we doing</h2>
           <ul class="list">
@@ -650,81 +669,97 @@ UI Designer"
       </div>
     </div>
 
-    <!--  
-    <section class="top-nav">
-      <div>
-        <a class="link-logo" href="./index.html">
-          Web
-          <span class="span-studio">Studio</span>
-        </a>
-      </div>
-      <input id="menu-toggle" />
-      <label class="menu-button-container" for="menu-toggle">
-        <div class="menu-button"></div>
-      </label>
-      <nav class="nav">
-        <ul class="list nav-list">
-          <li class="header-nav-item">
-            <a class="link nav-link active" href="./index.html">Studio</a>
-          </li>
-          <li class="header-nav-item">
-            <a class="link nav-link active" href="./portfolio.html"
-              >Portfolio</a
-            >
-          </li>
-          <li class="header-nav-item">
-            <a class="link nav-link active" href="">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-      <address class="address">
-        <ul class="list">
-          <li>
-            <a class="address-link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="address-link" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
-      </address>
-    </section>
-    -->
-
-    <!--<header class="page-header">
-      <div class="container">
-        <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
+    <!--Mobile menu-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle-btn js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
         >
-          <svg
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li><a href="./index.html" class="link-mobile">Studio</a></li>
+        <li><a href="./portfolio.html" class="link-mobile">Portfolio</a></li>
+        <li><a href="" class="link-mobile">Contacts</a></li>
+      </ul>
 
-        <ul class="menu">
-          <li><a href="" class="link">About</a></li>
-          <li><a href="" class="link">Products</a></li>
-          <li><a href="" class="link">Contacts</a></li>
-          <li><a href="" class="link">Career</a></li>
-        </ul>
-      </div>
-    </header>
-  -->
+      <ul class="address-menu">
+        <li>
+          <a class="tel-menu-link" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li>
+          <a class="address-menu-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="messenger-menu-list">
+        <li class="footer-messenger-item">
+          <a
+            class="footer-messenger-link"
+            href="https://www.instagram.com/"
+            aria-label="instagram"
+          >
+            <svg class="messenger-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-messenger-item">
+          <a
+            class="footer-messenger-link"
+            href="https://www.twitter.com/"
+            aria-label="twitter"
+          >
+            <svg class="messenger-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-messenger-item">
+          <a
+            class="footer-messenger-link"
+            href="https://www.facebook.com/"
+            aria-label="facebook"
+          >
+            <svg class="messenger-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-messenger-item">
+          <a
+            class="footer-messenger-link"
+            href="https://www.linkedin.com/"
+            aria-label="linkedin"
+          >
+            <svg class="messenger-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
 
     <script src="./js/modal.js"></script>
   </body>
