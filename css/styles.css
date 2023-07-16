@@ -314,7 +314,9 @@ nav {
       ),
       url(../images/people-office.jpg);
   }
-  @media (min-resolution: 192dpi) {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .section-hero {
       background-image: linear-gradient(
           to bottom,
@@ -1308,6 +1310,7 @@ nav {
   z-index: 999;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+  overflow-y: auto;
 }
 .menu-container.is-open {
   transform: translateX(0);
