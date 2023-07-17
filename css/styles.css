@@ -262,7 +262,7 @@ nav {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero-image-mobile@1x.jpg);
+    url(../images/people-office.jpg);
 }
 /*Retina screen*/
 @media (min-device-pixel-ratio: 2),
@@ -274,7 +274,7 @@ nav {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero-image-mobile@2x.jpg);
+      url(../images/people-office-@2x.jpg);
   }
 }
 
@@ -282,24 +282,6 @@ nav {
   .section-hero {
     min-width: 768px;
     min-height: 436px;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/hero-image-tablet@1x.jpg);
-  }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .section-hero {
-      background-image: linear-gradient(
-          to bottom,
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url(../images/hero-image-tablet@2x.jpg);
-    }
   }
 }
 
@@ -307,24 +289,6 @@ nav {
   .section-hero {
     min-width: 1158px;
     min-height: 600px;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/people-office.jpg);
-  }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .section-hero {
-      background-image: linear-gradient(
-          to bottom,
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url(../images/people-office-@2x.jpg);
-    }
   }
 }
 
@@ -1324,7 +1288,7 @@ nav {
   flex-direction: column;
   align-items: flex-start;
   width: 121px;
-  height: 200px;
+  max-height: 200px;
   gap: 30px;
   padding: 0;
   margin-bottom: auto;
