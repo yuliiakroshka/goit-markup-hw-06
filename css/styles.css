@@ -1298,9 +1298,8 @@ nav {
 .menu-container {
   position: fixed;
   width: 100vw;
-  height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
-  /* max-height: 786px;*/
+  max-height: 786px;
   display: flex;
   flex-direction: column;
   top: 0;
