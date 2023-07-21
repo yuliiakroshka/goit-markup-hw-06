@@ -1383,6 +1383,7 @@ nav {
   max-width: 320px;
   max-height: 40px;
   gap: 38px;
+  margin-bottom: 40px;
 }
 .menu-toggle-icon {
   stroke: var(--navyblue, #2e2f42);
